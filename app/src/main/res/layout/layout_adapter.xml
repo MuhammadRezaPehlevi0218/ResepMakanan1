@@ -7,16 +7,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:src="@drawable/soto"/>
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"

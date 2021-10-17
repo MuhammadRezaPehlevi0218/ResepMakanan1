@@ -28,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void getData(){
         nama.add("Soto");
-        foto.add("drawable/soto");
+        foto.add("https://cdns.klimg.com/merdeka.com/i/w/news/2017/11/06/906065/670x335/4-resep-dan-cara-membuat-soto-ayam-bening-enak-dan-sederhana-kln.jpg");
+
+        nama.add("Pecel");
+        foto.add("https://th.bing.com/th/id/OIP.4YbvSMtH4L63HZGxOVQIYgHaEK?w=263&h=180&c=7&r=0&o=5&pid=1.7");
 
         proses();
     }
