@@ -1,11 +1,14 @@
 package org.aplas.resepmakanan;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -18,11 +21,13 @@ import java.util.ArrayList;
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder> {
     private ArrayList<String> foto = new ArrayList<>();
     private ArrayList<String> nama = new ArrayList<>();
+    private ArrayList<String> info = new ArrayList<>();
     private Context context;
 
-    public RecycleViewAdapter(ArrayList<String> foto, ArrayList<String> nama, Context context) {
+    public RecycleViewAdapter(ArrayList<String> foto, ArrayList<String> nama,ArrayList<String>info, Context context) {
         this.foto = foto;
         this.nama = nama;
+        this.info = info;
         this.context = context;
     }
 
@@ -31,13 +36,28 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_adapter, parent, false);
         ViewHolder holder = new ViewHolder(view);
+
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Glide.with(context).asBitmap().load(foto.get(position)).into(holder.imageView);
         holder.text1.setText(nama.get(position));
+        holder.adapterConstraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Toast.makeText(context,nama.get(position),Toast.LENGTH_LONG).show();
+
+                Intent intent=new Intent(context,DetailActivity.class);
+
+                intent.putExtra("foto_makanan",foto.get(position));
+                intent.putExtra("nama_makanan",nama.get(position));
+                intent.putExtra("info_makanan",info.get(position));
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
