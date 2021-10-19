@@ -10,8 +10,8 @@ import com.bumptech.glide.Glide;
 
 public class DetailActivity extends AppCompatActivity {
 
-    ImageView imageViewFotomakanan;
-    TextView textViewNamaMakanan,textInfoMakanan;
+    ImageView imageViewDetail;
+    TextView textViewNamaMakanan,textViewdetailMakanan;
 
 
     @Override
@@ -19,24 +19,24 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        imageViewFotomakanan=findViewById(R.id.imageView);
-        textViewNamaMakanan=findViewById(R.id.textViewNamaMakanan);
-        textInfoMakanan=findViewById(R.id.textViewdetailMakanan);
+        imageViewDetail = findViewById(R.id.imageViewDetail);
+        textViewNamaMakanan = findViewById(R.id.textViewNamaMakanan);
+        textViewdetailMakanan = findViewById(R.id.textViewdetailMakanan);
 
         getIncomingExtra();
     }
     private void getIncomingExtra(){
-        if (getIntent().hasExtra("foto_makanan")&&getIntent().hasExtra("info_makanan")){
-            String fotoMakanan=getIntent().getStringExtra("foto_makanan");
-            String namaMakanan=getIntent().getStringExtra("nama_makanan");
-            String infoMakanan=getIntent().getStringExtra("info_makanan");
+        if (getIntent().hasExtra("foto_makanan") && getIntent().hasExtra("nama_makanan") && getIntent().hasExtra("info_makanan")){
+            String foto=getIntent().getStringExtra("foto_makanan");
+            String nama=getIntent().getStringExtra("nama_makanan");
+            String info=getIntent().getStringExtra("info_makanan");
 
-            setDataActivity(fotoMakanan,namaMakanan,infoMakanan);
+            setDataActivity(foto,nama,info);
         }
     }
-    private void setDataActivity(String fotoMakanan,String namaMakanan, String infoMakanan){
-        Glide.with(this).asBitmap().load(fotoMakanan).into(imageViewFotomakanan);
-        textViewNamaMakanan.setText(namaMakanan);
-        textInfoMakanan.setText(infoMakanan);
+    private void setDataActivity(String foto,String nama, String info){
+        Glide.with(this).asBitmap().load(foto).into(imageViewDetail);
+        textViewNamaMakanan.setText(nama);
+        textViewdetailMakanan.setText(info);
     }
 }
