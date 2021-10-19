@@ -22,12 +22,16 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     private ArrayList<String> foto = new ArrayList<>();
     private ArrayList<String> nama = new ArrayList<>();
     private ArrayList<String> info = new ArrayList<>();
+    private ArrayList<String> bahan = new ArrayList<>();
+    private ArrayList<String> caraMasak = new ArrayList<>();
     private Context context;
 
-    public RecycleViewAdapter(ArrayList<String> foto, ArrayList<String> nama,ArrayList<String>info, Context context) {
+    public RecycleViewAdapter( ArrayList<String> foto, ArrayList<String> nama, ArrayList<String> info,ArrayList<String> bahan, ArrayList<String> caraMasak, Context context) {
         this.foto = foto;
         this.nama = nama;
         this.info = info;
+        this.bahan= bahan;
+        this.caraMasak= caraMasak;
         this.context = context;
     }
 
@@ -54,6 +58,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
                 intent.putExtra("foto_makanan",foto.get(position));
                 intent.putExtra("nama_makanan",nama.get(position));
                 intent.putExtra("info_makanan",info.get(position));
+                intent.putExtra("bahan_makanan",bahan.get(position));
+                intent.putExtra("caraMasak_makanan",caraMasak.get(position));
 
                 context.startActivity(intent);
             }

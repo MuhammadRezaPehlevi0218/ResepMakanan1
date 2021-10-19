@@ -10,8 +10,8 @@ import com.bumptech.glide.Glide;
 
 public class DetailActivity extends AppCompatActivity {
 
-    ImageView imageViewDetail;
-    TextView textViewNamaMakanan,textViewdetailMakanan;
+    ImageView imageViewFotomakanan;
+    TextView textViewNamaMakanan,textViewdetailMakanan, textViewBahanMakanan, textViewCaraMasak;
 
 
     @Override
@@ -19,24 +19,30 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        imageViewDetail = findViewById(R.id.imageViewDetail);
-        textViewNamaMakanan = findViewById(R.id.textViewNamaMakanan);
-        textViewdetailMakanan = findViewById(R.id.textViewdetailMakanan);
+        imageViewFotomakanan=findViewById(R.id.imageViewDetail);
+        textViewNamaMakanan=findViewById(R.id.textViewNamaMakanan);
+        textViewdetailMakanan=findViewById(R.id.textViewdetailMakanan);
+        textViewBahanMakanan=findViewById(R.id.textViewBahanMakanan);
+        textViewCaraMasak=findViewById(R.id.textViewCaraMasakMakanan);
 
         getIncomingExtra();
     }
     private void getIncomingExtra(){
-        if (getIntent().hasExtra("foto_makanan") && getIntent().hasExtra("nama_makanan") && getIntent().hasExtra("info_makanan")){
-            String foto=getIntent().getStringExtra("foto_makanan");
-            String nama=getIntent().getStringExtra("nama_makanan");
-            String info=getIntent().getStringExtra("info_makanan");
+        if (getIntent().hasExtra("foto_makanan")&&getIntent().hasExtra("info_makanan")){
+            String fotoMakanan=getIntent().getStringExtra("foto_makanan");
+            String namaMakanan=getIntent().getStringExtra("nama_makanan");
+            String infoMakanan=getIntent().getStringExtra("info_makanan");
+            String bahanMakanan=getIntent().getStringExtra("bahan_makanan");
+            String caraMasak=getIntent().getStringExtra("caraMasak_makanan");
 
-            setDataActivity(foto,nama,info);
+            setDataActivity(fotoMakanan,namaMakanan,infoMakanan,bahanMakanan,caraMasak);
         }
     }
-    private void setDataActivity(String foto,String nama, String info){
-        Glide.with(this).asBitmap().load(foto).into(imageViewDetail);
-        textViewNamaMakanan.setText(nama);
-        textViewdetailMakanan.setText(info);
+    private void setDataActivity(String fotoMakanan,String namaMakanan, String infoMakanan, String bahanMakanan, String caraMasak){
+        Glide.with(this).asBitmap().load(fotoMakanan).into(imageViewFotomakanan);
+        textViewNamaMakanan.setText(namaMakanan);
+        textViewdetailMakanan.setText(infoMakanan);
+        textViewBahanMakanan.setText(bahanMakanan);
+        textViewCaraMasak.setText(caraMasak);
     }
 }
