@@ -5,6 +5,20 @@
       <map>
         <entry key="..\:/3D/Mobile/ResepMakanan/app/src/main/res/layout/activity_main.xml" value="0.14266304347826086" />
         <entry key="..\:/3D/Mobile/ResepMakanan/app/src/main/res/layout/layout_adapter.xml" value="0.2" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/drawable/color_state.xml" value="0.2203125" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/activity_navigasi.xml" value="0.1852355072463768" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/bottom_navigasi.xml" value="0.22" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/fragment_add.xml" value="0.1852355072463768" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/fragment_dashboard.xml" value="0.1852355072463768" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/fragment_profile.xml" value="0.1852355072463768" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/layout_adapter.xml" value="0.1" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/layout_drawer.xml" value="0.1852355072463768" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/layout_header_drawer.xml" value="0.1852355072463768" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/navigasi_bottom.xml" value="0.1852355072463768" />
+        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/menu/menu_bottom.xml" value="0.20416666666666666" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/Minggu 3/ResepMakanan/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/Minggu 3/ResepMakanan/app/src/main/res/layout/layout_adapter.xml" value="0.33" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/activity_detail.xml" value="0.1" />

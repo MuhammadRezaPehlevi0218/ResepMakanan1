@@ -28,4 +28,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:text="Nama Makanan"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.PorterDuff;
 import android.os.Bundle;
+
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
@@ -14,13 +17,16 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> info = new ArrayList<>();
     private ArrayList<String> bahan = new ArrayList<>();
     private ArrayList<String> caraMasak = new ArrayList<>();
+//    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setContentView(R.layout.bottom_navigasi);
 
         getData();
+//        menu();
     }
     private void proses(){
         RecyclerView recyclerView = findViewById(R.id.recyleview);
@@ -29,7 +35,35 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
+//    private void menu(){
+//        tabLayout = findViewById(R.id.bottom_navigasi);
+//        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_home),0);
+//        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_add),1);
+//        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_person),2);
+//
+//        tabLayout.getTabAt(0).getIcon().setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_IN);
+//        tabLayout.getTabAt(1).getIcon().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_IN);
+//        tabLayout.getTabAt(2).getIcon().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_IN);
+//
+//        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(TabLayout.Tab tab) {
+//                tab.getIcon().setColorFilter(getResources().getColor(R.color.black),PorterDuff.Mode.SRC_IN);
+//            }
+//
+//            @Override
+//            public void onTabUnselected(TabLayout.Tab tab) {
+//                tab.getIcon().setColorFilter(getResources().getColor(R.color.white),PorterDuff.Mode.SRC_IN);
+//            }
+//
+//            @Override
+//            public void onTabReselected(TabLayout.Tab tab) {
+//
+//            }
+//        });
+//    }
     private void getData(){
+
         nama.add("Soto Lamongan");
         foto.add("https://4.bp.blogspot.com/-2zdY6kmMeAg/WCQu9sLjCzI/AAAAAAAAQPQ/R9VMD5qGQAYzeRV82wHximLndhX9wcrLwCLcB/s1600/soto-lamongan1.jpg");
         info.add("Soto adalah makanan yang sudah dikenal oleh masyarakat Indonesia. Namun soto lamongan adalah soto khas dari daerah Lamongan Jawa Timur. Walaupun soto ini banyak juga dijual diberbagai daerah / kota besar di Indonesia, namun ke khasan rasa dan penampilan soto lamongan menjadi variasi tersendiri serta memperkaya keanekaragaman soto di Indonesia.");
