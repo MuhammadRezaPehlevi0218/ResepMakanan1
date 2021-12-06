@@ -5,25 +5,21 @@
       <map>
         <entry key="..\:/3D/Mobile/ResepMakanan/app/src/main/res/layout/activity_main.xml" value="0.14266304347826086" />
         <entry key="..\:/3D/Mobile/ResepMakanan/app/src/main/res/layout/layout_adapter.xml" value="0.2" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/drawable/color_state.xml" value="0.2203125" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/activity_detail.xml" value="0.1" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/activity_navigasi.xml" value="0.1852355072463768" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/bottom_navigasi.xml" value="0.22" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/fragment_add.xml" value="0.1852355072463768" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/fragment_dashboard.xml" value="0.1852355072463768" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/fragment_profile.xml" value="0.1852355072463768" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/layout_adapter.xml" value="0.1" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/layout_drawer.xml" value="0.1852355072463768" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/layout_header_drawer.xml" value="0.1852355072463768" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/layout/navigasi_bottom.xml" value="0.1852355072463768" />
-        <entry key="..\:/3D/Mobile/ResepMakanan1/app/src/main/res/menu/menu_bottom.xml" value="0.20416666666666666" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/Minggu 3/ResepMakanan/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/Minggu 3/ResepMakanan/app/src/main/res/layout/layout_adapter.xml" value="0.33" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.240625" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23697916666666666" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/activity_detail.xml" value="0.1" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/bottom_navigasi.xml" value="0.1125" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/fragment_add.xml" value="0.22" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/fragment_dashboard.xml" value="0.1125" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/layout_adapter.xml" value="0.25" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/layout_drawer.xml" value="0.22" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/layout/layout_header_drawer.xml" value="0.1125" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/menu/menu_bottom.xml" value="0.22447916666666667" />
+        <entry key="..\:/Kuliah/Semester 5/Mobile/source/ResepMakanan/ResepMakanan/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.12864583333333332" />
       </map>
     </option>
   </component>
@@ -32,5 +28,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
